@@ -1,3 +1,3 @@
 # calcD
-it's just a calculator for variety of areas of shapes
+it's just a calculator for variety of areas of shapes \n
 WARNING : YOU MUST HAVE PYTHON INSTALLED IN YOUR COMPUTER WITH PYFIGLET AND TERMCOLOR MODULES AND MATH LIBRARY TO WORK PROPERLY
