@@ -1,3 +1,4 @@
+#coded by : Azad Mohammed
 import math
 import pyfiglet
 import termcolor
@@ -318,6 +319,5 @@ def open_pro():
 
 
 open_pro()
-#Calculate_Areas.circle_area(1)
-#Calculate_Areas.tri_area(4 , 4)
+
 #Calculate_Areas2D.Cres_area(0,1)
