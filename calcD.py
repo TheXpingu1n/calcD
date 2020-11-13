@@ -344,9 +344,9 @@ class Calculate_Areas_Plat5:
                else:
                  raise ValueError
           choose = input('What do you want? Area of the slant surface to the tetrahedron ->> SA \n Area of whole surface of tetrahadron ->> WA \n >>> ').capitalize().strip()
-          if choose == 'SA' : 
+          if choose == 'S' : 
                Tetrahedron_1(0)
-          elif choose == 'WA' : 
+          elif choose == 'W' : 
                Tetrahedron_2(0)
           else : 
                 raise ValueError
