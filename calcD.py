@@ -16,7 +16,13 @@ class Calculate_Areas2D:
        r = int(rad)
        circleA = (pi * (pow(r, 2)))
        print(f'The area is : {circleA} cm²')
-   
+       quit1 = input('Want to close? Y or N?').capitalize().strip()
+       if quit1 == 'Y': 
+            print('Exiting!')
+       elif quit1 == 'N': 
+            open_pro()
+       else:
+            raise ValueError
    def tri_area(self) :
         b = input('Insert a value of the base : ')
         h = input('Insert a value of the height : ')
@@ -24,13 +30,27 @@ class Calculate_Areas2D:
         hei = int(h)
         triangleA = float(0.5) * bas * hei
         print(f'The area is : {triangleA} cm²')
-  
+        quit1 = input('Want to close? Y or N?').capitalize().strip()
+        if quit1 == 'Y': 
+            print('Exiting!')
+        elif quit1 == 'N': 
+            open_pro()
+        else:
+            raise ValueError
+
    def squ_area(self) :
         a = input('The length of the side : ')
         side = int(a)
         sqA = pow(side * 2)
         print(f'The area is : {sqA} cm²')
-   
+        quit1 = input('Want to close? Y or N?').capitalize().strip()
+        if quit1 == 'Y': 
+            print('Exiting!')
+        elif quit1 == 'N': 
+            open_pro()
+        else:
+            raise ValueError
+
    def rect_area(self) :
         l = input('The length please : ')
         w = input('And the width : ')
@@ -38,6 +58,13 @@ class Calculate_Areas2D:
         wid = int(w)
         rectA = leng * wid
         print(f'The area is {rectA} cm²')
+        quit1 = input('Want to close? Y or N?').capitalize().strip()
+        if quit1 == 'Y': 
+            print('Exiting!')
+        elif quit1 == 'N': 
+            open_pro()
+        else:
+            raise ValueError
    
    def para_area(self):
         b = input('The base length please : ')
@@ -46,6 +73,14 @@ class Calculate_Areas2D:
         hei = int(h)
         paralA = basee * hei
         print(f'The area is : {paralA} cm²')
+        quit1 = input('Want to close? Y or N?').capitalize().strip()
+        if quit1 == 'Y': 
+            print('Exiting!')
+        elif quit1 == 'N': 
+            open_pro()
+        else:
+            raise ValueError
+        
    
    def trap_area(self):
           APa = input('Please enter the first parallel line : ')
@@ -56,6 +91,14 @@ class Calculate_Areas2D:
           H = int(Hei)
           trapizumA = 0.5 * (APara + BPara) * H
           print(f'The area is : {trapizumA} cm²')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
+          
   
    def elipise_area(self) :
           a = input('Enter length of major axis : ')
@@ -64,6 +107,13 @@ class Calculate_Areas2D:
           sideB = int(b) * 0.5
           elipA = pi * sideA * sideB
           print(f'The area : {elipA} cm²')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
   
    def Cres_area(self):
           RR = input('Please enter your first radius (biggest) length : ')
@@ -72,6 +122,13 @@ class Calculate_Areas2D:
           rad2 = int(r)
           AofC = (pi*rad1**2)-(pi*rad2**2)
           print(f'The area is : {AofC} cm²')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
    
    def rhombus_area(self):
       print('''Choose *By numbers* : \n
@@ -91,6 +148,13 @@ class Calculate_Areas2D:
              Side = int(s)
              area1 = Height * Side
              print(f'The area is : {area1} cm²')
+             quit1 = input('Want to close? Y or N?').capitalize().strip()
+             if quit1 == 'Y': 
+                print('Exiting!')
+             elif quit1 == 'N': 
+                open_pro()
+             else:
+                raise ValueError
      
       def rhombus_area2(self):
              s = input("Enter length of side : ")
@@ -99,7 +163,14 @@ class Calculate_Areas2D:
              MofAngle = int(Mesaure)
              area2 = pow(Side1 , 2)*sin(MofAngle)
              print(f'The area is : {area2} cm²')
-             
+             quit1 = input('Want to close? Y or N?').capitalize().strip()
+             if quit1 == 'Y': 
+                  print('Exiting!')
+             elif quit1 == 'N': 
+                  open_pro()
+             else:
+                raise ValueError
+              
       def rhombus_area3(self):
              d = input('Enter the length of the first diameter : ')
              d2 = input('And the second diameter : ')
@@ -107,6 +178,13 @@ class Calculate_Areas2D:
              di2 = int(d2)
              area3 = (di1 * di2) / 2
              print(f'The area is : {area3} cm²')
+             quit1 = input('Want to close? Y or N?').capitalize().strip()
+             if quit1 == 'Y': 
+                 print('Exiting!')
+             elif quit1 == 'N': 
+                 open_pro()
+             else:
+                 raise ValueError
       if no == no1 :
            rhombus_area1(1)
       elif no == no2 :  
@@ -125,6 +203,13 @@ class Calculate_Areas3D:
           A = int(edge)
           surfAreaC = 6*A**2
           print(f'The area is : {surfAreaC} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
     
      def RecPrism_surArea(self):
          l = input('Enter the length : ') 
@@ -135,7 +220,14 @@ class Calculate_Areas3D:
          height = int(h)
          surfArea = 2 * (width*length) + (height*length) + (height*width)
          print(f'The area is : {surfArea} cm³')
-    
+         quit1 = input('Want to close? Y or N?').capitalize().strip()
+         if quit1 == 'Y': 
+            print('Exiting!')
+         elif quit1 == 'N': 
+            open_pro()
+         else:
+            raise ValueError
+
      def Cy_surfarea(self):
          radius = input('Enter the length of the radius : ')
          height = input('And the height : ')
@@ -143,6 +235,13 @@ class Calculate_Areas3D:
          h = int(height)
          area = 2 * pi * r * (r + h)
          print(f'The area is : {area} cm³')
+         quit1 = input('Want to close? Y or N?').capitalize().strip()
+         if quit1 == 'Y': 
+            print('Exiting!')
+         elif quit1 == 'N': 
+            open_pro()
+         else:
+            raise ValueError
    
      def Cone_surfarea(self):
           radius = input('Enter the length of the radius : ')
@@ -151,18 +250,39 @@ class Calculate_Areas3D:
           h = int(height)
           area = pi * r * (r + h)
           print(f'The area is : {area} cm³')
-   
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
+
      def Sp_surfArea(self):
           radius = input('Enter the length of the radius : ')
           r = int(radius)
           area = 4 * pi * r**2
           print(f'The area is : {area} cm³')
-   
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError 
+
      def hemiSp_surfArea(self):
           radius = input('Enter the length of the radius : ')
           r = int(radius)
           area = 3 * pi * pow(r , 2)
           print(f'The area is : {area} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
     
      def pyramid_LSA(self):
           per = input('Enter the perimeter : ')
@@ -171,7 +291,14 @@ class Calculate_Areas3D:
           l = int(height)
           area = 0.5 * p * l 
           print(f'The area is : {area} cm³')
-    
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError 
+
      def pyramid_TSA(self):
           per = input('Enter the perimeter : ')
           height = input('And the slant height : ')
@@ -181,6 +308,13 @@ class Calculate_Areas3D:
           B = int(Base)
           area = 0.5 * p * l + B
           print(f'The area is : {area} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
 
 class Calculate_Areas_Plat5:
 
@@ -190,11 +324,25 @@ class Calculate_Areas_Plat5:
                a = int(side)
                area = 3 * (math.sqrt(3))/4 * a ** 2
                print(f'The area is : {area} cm³')
+               quit1 = input('Want to close? Y or N?').capitalize().strip()
+               if quit1 == 'Y': 
+                 print('Exiting!')
+               elif quit1 == 'N': 
+                 open_pro()
+               else:
+                 raise ValueError
           def Tetrahedron_2(self):
                side = input('Enter the length of the side : ')
                a = int(side)
                area = 4 * (math.sqrt(3))/4 * a ** 2
                print(f'The area is : {area} cm³')
+               quit1 = input('Want to close? Y or N?').capitalize().strip()
+               if quit1 == 'Y': 
+                 print('Exiting!')
+               elif quit1 == 'N': 
+                 open_pro()
+               else:
+                 raise ValueError
           choose = input('What do you want? Area of the slant surface to the tetrahedron ->> SA \n Area of whole surface of tetrahadron ->> WA \n >>> ').capitalize().strip()
           if choose == 'SA' : 
                Tetrahedron_1(0)
@@ -203,26 +351,55 @@ class Calculate_Areas_Plat5:
           else : 
                 raise ValueError
 
+
      def hexahedron(self):
           print('it is just a cube, go and call the cube calc function.')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
 
      def Octahedron(self):
           edge = input('Enter The length of the edge : ')
           a = int(edge)
           area = 2 * pow(a , 2) * math.sqrt(3)
           print(f'The area is : {area} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
 
      def Dodecahedron(self):
           length = input('Enter the edge length : ')
           a = int(length)
           surfarea = 3 * math.sqrt(25 + 10 * math.sqrt(5)) * a ** 2
           print(f'The area is : {surfarea} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
 
      def Icosahedron(self):
           length = input('Enter the length of the side : ')
           a = int(length)
           area = 5 * math.sqrt(3) * a ** 2
           print(f'The area is : {area} cm³')
+          quit1 = input('Want to close? Y or N?').capitalize().strip()
+          if quit1 == 'Y': 
+            print('Exiting!')
+          elif quit1 == 'N': 
+            open_pro()
+          else:
+            raise ValueError
 
 
 def open_pro():     
